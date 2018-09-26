@@ -93,12 +93,6 @@ namespace TestPlanViewer
                 return "Active";
             }
 
-
-            if (outcome == TestOutcome.Unspecified)
-            {
-                string test = "";
-            }
-
             return outcome == TestOutcome.Unspecified ? "Unspecified (Never Executed)" : outcome.ToString();
         }
 
